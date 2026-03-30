@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="admin-layout">
+
+  <!-- Sidebar -->
+  <aside class="admin-sidebar">
+    <div>
+      <div class="admin-logo-box">
+        <div class="admin-logo-icon">📘</div>
+        <div class="admin-logo-text">LMS</div>
+      </div>
+
+      <nav class="admin-menu">
+        <a href="dashboard.html" class="admin-menu-item active">
+          <span class="admin-menu-icon">▣</span>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="manage-books.html" class="admin-menu-item">
+          <span class="admin-menu-icon">▥</span>
+          <span>Manage Books</span>
+        </a>
+
+        <a href="add-book.html" class="admin-menu-item">
+          <span class="admin-menu-icon">＋</span>
+          <span>Add Book</span>
+        </a>
+      </nav>
+    </div>
+
+    <button class="admin-logout-btn">Logout</button>
+  </aside>
+
+  <!-- Main -->
+  <main class="admin-main">
+
+    <h1 class="admin-title">Admin Dashboard</h1>
+    <p class="admin-sub">Welcome to the library management system</p>
+
+    <!-- Top stats -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon">📚</div>
+        <h2>2900</h2>
+        <p>Total Books</p>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">👥</div>
+        <h2>540</h2>
+        <p>Total Users</p>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">✔</div>
+        <h2>429</h2>
+        <p>Active Borrows</p>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">📈</div>
+        <h2>+264</h2>
+        <p>New Members</p>
+      </div>
+    </div>
+
+    <!-- Action cards -->
+    <div class="admin-action-grid">
+      <div class="admin-action-card blue-card">
+        <div class="admin-action-icon">＋</div>
+        <div>
+          <h3>Add New Book</h3>
+          <p>Add books to the library</p>
+        </div>
+      </div>
+
+      <div class="admin-action-card green-card">
+        <div class="admin-action-icon">👥</div>
+        <div>
+          <h3>Add New User</h3>
+          <p>Register New Members</p>
+        </div>
+      </div>
+
+      <div class="admin-action-card yellow-card">
+        <div class="admin-action-icon">📄</div>
+        <div>
+          <h3>Generate Reports</h3>
+          <p>View System Analytics</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom section -->
+    <div class="admin-bottom-grid">
+
+      <div class="admin-panel">
+        <h2>Book Statistics</h2>
+
+        <div class="stat-row">
+          <div class="stat-top">
+            <span>The Great Gatsby</span>
+            <span>2/10 borrowed</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill fill-20"></div></div>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat-top">
+            <span>1984</span>
+            <span>2/6 borrowed</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill fill-33"></div></div>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat-top">
+            <span>Madolduwa</span>
+            <span>12/20 borrowed</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill fill-60"></div></div>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat-top">
+            <span>Pride and Prejudice</span>
+            <span>1/6 borrowed</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill fill-17"></div></div>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat-top">
+            <span>The Hobbit</span>
+            <span>2/8 borrowed</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill fill-25"></div></div>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat-top">
+            <span>Hathpana</span>
+            <span>21/25 borrowed</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill fill-84"></div></div>
+        </div>
+      </div>
+
+      <div class="admin-panel">
+        <h2>Books by Genre</h2>
+
+        <div class="genre-row">
+          <div class="genre-left">
+            <span class="genre-dot dot-blue"></span>
+            <span>Classic</span>
+          </div>
+          <span>28%</span>
+        </div>
+
+        <div class="genre-row">
+          <div class="genre-left">
+            <span class="genre-dot dot-green"></span>
+            <span>Science Fiction</span>
+          </div>
+          <span>32%</span>
+        </div>
+
+        <div class="genre-row">
+          <div class="genre-left">
+            <span class="genre-dot dot-pink"></span>
+            <span>Romance</span>
+          </div>
+          <span>56%</span>
+        </div>
+
+        <div class="genre-row">
+          <div class="genre-left">
+            <span class="genre-dot dot-yellow"></span>
+            <span>Fantasy</span>
+          </div>
+          <span>44%</span>
+        </div>
+
+        <div class="genre-row">
+          <div class="genre-left">
+            <span class="genre-dot dot-gray"></span>
+            <span>Others</span>
+          </div>
+          <span>2%</span>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

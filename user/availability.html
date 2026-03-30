@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Availability</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard-layout">
+
+    <aside class="sidebar">
+      <div>
+        <div class="logo-box">
+          <div class="logo-icon">📘</div>
+          <span class="logo-text">LMS</span>
+        </div>
+
+        <nav class="menu">
+          <a href="user-dashboard.html" class="menu-item">
+            <span class="menu-icon">▣</span>
+            <span>Dashboard</span>
+          </a>
+
+          <a href="search-books.html" class="menu-item">
+            <span class="menu-icon">▥</span>
+            <span>Search Books</span>
+          </a>
+
+          <a href="my-books.html" class="menu-item">
+            <span class="menu-icon">⌕</span>
+            <span>My Books</span>
+          </a>
+
+          <a href="availability.html" class="menu-item active">
+            <span class="menu-icon">🗓</span>
+            <span>Availability</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="logout-wrap">
+        <button class="logout-btn">Logout</button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <div class="content-wrap">
+
+        <div class="search-top-bar">
+          <h1>Book Availability</h1>
+
+          <div class="top-user">
+            <div class="top-user-icon">👤</div>
+            <span>John Doe</span>
+          </div>
+        </div>
+
+        <div class="availability-table-card">
+          <table class="availability-table">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Total Copies</th>
+                <th>Available</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <div class="book-cell">
+                    <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=300" alt="The Great Gatsby">
+                    <span>The Great Gatsby</span>
+                  </div>
+                </td>
+                <td>F. Scott Fitzgerald</td>
+                <td class="category-text">Classic</td>
+                <td>5</td>
+                <td class="available-count">3</td>
+                <td class="status-available">Available</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="book-cell">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300" alt="To Kill a Mockingbird">
+                    <span>To Kill a Mockingbird</span>
+                  </div>
+                </td>
+                <td>Harper Lee</td>
+                <td class="category-text">Classic</td>
+                <td>4</td>
+                <td class="available-count">4</td>
+                <td class="status-available">Available</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="book-cell">
+                    <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=300" alt="1984">
+                    <span>1984</span>
+                  </div>
+                </td>
+                <td>George Orwell</td>
+                <td class="category-text">Science Fiction</td>
+                <td>8</td>
+                <td class="available-count">1</td>
+                <td class="status-available">Available</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="book-cell">
+                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=300" alt="Pride and Prejudice">
+                    <span>Pride and Prejudice</span>
+                  </div>
+                </td>
+                <td>Jane Austen</td>
+                <td class="category-text">Romance</td>
+                <td>7</td>
+                <td class="available-count">5</td>
+                <td class="status-available">Available</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="book-cell">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300" alt="The Hobbit">
+                    <span>The Hobbit</span>
+                  </div>
+                </td>
+                <td>J.R.R. Tolkien</td>
+                <td class="category-text">Fantasy</td>
+                <td>3</td>
+                <td class="out-count">0</td>
+                <td class="status-out">Out of Stock</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</body>
+</html>

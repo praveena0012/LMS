@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Books</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="dashboard-layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div>
+      <div class="logo-box">
+        <div class="logo-icon">📘</div>
+        <span class="logo-text">LMS</span>
+      </div>
+
+      <nav class="menu">
+        <a href="user-dashboard.html" class="menu-item">
+          ▣ Dashboard
+        </a>
+
+        <a href="search-books.html" class="menu-item">
+          📚 Search Books
+        </a>
+
+        <a href="my-books.html" class="menu-item active">
+          🔍 My Books
+        </a>
+
+        <a href="availability.html" class="menu-item">
+          🗓 Availability
+        </a>
+      </nav>
+    </div>
+
+    <button class="logout-btn">Logout</button>
+  </aside>
+
+  <!-- Main -->
+  <main class="main-area">
+
+    <!-- Top -->
+    <div class="top-bar">
+      <h1>My Books</h1>
+
+      <div class="user-info-top">
+        <div class="user-icon">👤</div>
+        <span>John Doe</span>
+      </div>
+    </div>
+
+    <!-- Empty State -->
+    <div class="empty-card">
+      <div class="empty-icon">📖</div>
+      <h2>No Borrowed Books</h2>
+      <p>You haven't borrowed any books yet. Visit the search page to find books!</p>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

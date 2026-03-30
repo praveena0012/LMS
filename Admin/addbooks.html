@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Book</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="admin-layout">
+
+    <!-- Sidebar -->
+    <aside class="admin-sidebar">
+      <div>
+        <div class="admin-logo-box">
+          <div class="admin-logo-icon">📘</div>
+          <div class="admin-logo-text">LMS</div>
+        </div>
+
+        <nav class="admin-menu">
+          <a href="dashboard.html" class="admin-menu-item">
+            <span class="admin-menu-icon">▣</span>
+            <span>Dashboard</span>
+          </a>
+
+          <a href="manage-books.html" class="admin-menu-item">
+            <span class="admin-menu-icon">▥</span>
+            <span>Manage Books</span>
+          </a>
+
+          <a href="add-book.html" class="admin-menu-item active">
+            <span class="admin-menu-icon">＋</span>
+            <span>Add Book</span>
+          </a>
+        </nav>
+      </div>
+
+      <button class="admin-logout-btn">Logout</button>
+    </aside>
+
+    <!-- Main -->
+    <main class="admin-main">
+      <div class="admin-addbook-page">
+
+        <!-- Top area -->
+        <div class="admin-page-top">
+          <h1>Add New Book</h1>
+
+          <div class="admin-profile-box">
+            <div class="admin-profile-icon">👤</div>
+            <div class="admin-profile-text">
+              <h3>John Doe</h3>
+              <p>Administrator</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form card -->
+        <div class="addbook-card">
+          <h2>Enter Book Details</h2>
+
+          <form id="addBookForm">
+            <div class="addbook-form-group">
+              <label for="bookName">Book</label>
+              <input type="text" id="bookName" placeholder="Enter the Book Name">
+            </div>
+
+            <div class="addbook-form-group">
+              <label for="authorName">Author</label>
+              <input type="text" id="authorName" placeholder="Enter Author's Name">
+            </div>
+
+            <div class="addbook-form-group">
+              <label for="category">Category</label>
+              <input type="text" id="category" placeholder="eg: Fiction, Science, History">
+            </div>
+
+            <div class="addbook-form-group">
+              <label for="copies">Number of copies</label>
+              <input type="number" id="copies" placeholder="Enter the Number of Copies">
+            </div>
+
+            <div class="addbook-form-group">
+              <label for="imageUrl">Image URL (Optional)</label>
+              <input type="text" id="imageUrl" placeholder="Enter Image URL">
+            </div>
+
+            <div class="addbook-button-row">
+              <button type="button" class="addbook-cancel-btn" onclick="clearAddBookForm()">Cancel</button>
+              <button type="submit" class="addbook-save-btn">Save</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

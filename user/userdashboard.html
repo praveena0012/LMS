@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div>
+        <div class="logo-box">
+          <div class="logo-icon">📘</div>
+          <span class="logo-text">LMS</span>
+        </div>
+
+        <div class="user-info">
+          <h3>John Doe</h3>
+          <p>john@example.com</p>
+        </div>
+
+        <nav class="menu">
+          <a href="user-dashboard.html" class="menu-item active">
+            <span class="menu-icon">▣</span>
+            <span>Dashboard</span>
+          </a>
+
+          <a href="search-books.html" class="menu-item">
+            <span class="menu-icon">⌕</span>
+            <span>Search Books</span>
+          </a>
+
+          <a href="my-books.html" class="menu-item">
+            <span class="menu-icon">▥</span>
+            <span>My Books</span>
+          </a>
+
+          <a href="availability.html" class="menu-item">
+            <span class="menu-icon">🗓</span>
+            <span>Availability</span>
+          </a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main-area">
+      <div class="content-wrap">
+
+        <section class="welcome-block">
+          <h1>Welcome back, John Doe!</h1>
+          <p>Here's your library overview for today</p>
+        </section>
+
+        <section class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon blue">📔</div>
+            <div class="stat-number">0</div>
+            <div class="stat-label">Currently Borrowed</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon yellow">◔</div>
+            <div class="stat-number">0</div>
+            <div class="stat-label">Due This Week</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon pink">↗</div>
+            <div class="stat-number">0</div>
+            <div class="stat-label">Overdue Books</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon green">📖</div>
+            <div class="stat-number">5</div>
+            <div class="stat-label">Available Books</div>
+          </div>
+        </section>
+
+        <section class="borrow-panel">
+          <div class="panel-header">
+            <h2>My Borrowed Books</h2>
+          </div>
+
+          <div class="empty-state">
+            <div class="empty-icon">📖</div>
+            <p>No borrowed books yet</p>
+            <a href="search-books.html" class="browse-btn">Browse Books</a>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>

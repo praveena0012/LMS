@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage Books</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="admin-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div>
+        <div class="logo-box">
+          <div class="logo-icon">
+            <i class="fa-solid fa-book-open-reader"></i>
+          </div>
+          <div class="logo-text">LMS</div>
+        </div>
+
+        <div class="sidebar-line"></div>
+
+        <nav class="menu">
+          <a href="#" class="menu-item">
+            <i class="fa-solid fa-table-cells-large"></i>
+            <span>Dashboard</span>
+          </a>
+
+          <a href="#" class="menu-item active">
+            <i class="fa-solid fa-book"></i>
+            <span>Manage Books</span>
+          </a>
+
+          <a href="#" class="menu-item">
+            <i class="fa-solid fa-plus"></i>
+            <span>Add Book</span>
+          </a>
+        </nav>
+      </div>
+
+      <button class="logout-btn">Logout</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <h1>Manage Books</h1>
+
+        <div class="admin-profile">
+          <div class="profile-icon">
+            <i class="fa-regular fa-circle-user"></i>
+          </div>
+          <div class="profile-text">
+            <h3>John Doe</h3>
+            <p>Administrator</p>
+          </div>
+        </div>
+      </header>
+
+      <section class="table-card">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Category</th>
+              <th>Total Copies</th>
+              <th>Available</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody id="bookTableBody">
+            <!-- JS inserts rows -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+  </div>
+
+ 
+  <script src="../js/data.js"></script>
+</body>
+</html>
