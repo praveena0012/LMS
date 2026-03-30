@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register Account</title>
+  <link rel="stylesheet" href="css/signup.css" />
+</head>
+<body>
+  <div class="signup-page">
+
+    <!-- Left Panel -->
+    <div class="left-panel">
+      <div class="left-content">
+        <div class="icon-box">
+          <span class="book-icon">📖</span>
+        </div>
+        <h1>Join Our Community</h1>
+        <p>Create your account and get instant access to thousands of books and resources.</p>
+      </div>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="right-panel">
+      <div class="form-card">
+        <h2>Register Account</h2>
+
+        <form id="signupForm">
+          <div class="form-group">
+            <label for="fullname">Full name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required />
+          </div>
+
+          <div class="form-group">
+            <label for="nic">NIC</label>
+            <input type="text" id="nic" name="nic" placeholder="Enter your NIC Number" required />
+          </div>
+
+          <div class="form-group">
+            <label>NIC Upload</label>
+
+            <label class="upload-box" for="nicFront">
+              <span class="upload-text" id="frontText">📤 Click to upload NIC Front</span>
+            </label>
+            <input type="file" id="nicFront" name="nicFront" accept="image/*,.pdf" hidden />
+
+            <label class="upload-box" for="nicBack">
+              <span class="upload-text" id="backText">📤 Click to upload NIC Back</span>
+            </label>
+            <input type="file" id="nicBack" name="nicBack" accept="image/*,.pdf" hidden />
+          </div>
+
+          <button type="submit" class="register-btn">Register</button>
+
+          <p class="login-text">
+            Already have an account?
+            <a href="login.html">Login</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/signup.js"></script>
+</body>
+</html>
