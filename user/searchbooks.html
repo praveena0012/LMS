@@ -4,23 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Search Books</title>
+
   <link rel="stylesheet" href="../css/style.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div class="dashboard-layout">
 
     <!-- Sidebar -->
     <aside class="sidebar">
       <div>
+
         <div class="logo-box">
           <div class="logo-icon">📘</div>
           <span class="logo-text">LMS</span>
         </div>
 
+        <!--  CORRECT NAVIGATION -->
         <nav class="menu">
+
           <a href="userdashboard.html" class="menu-item">
             <span class="menu-icon">▣</span>
             <span>Dashboard</span>
@@ -40,11 +46,16 @@
             <span class="menu-icon">🗓</span>
             <span>Availability</span>
           </a>
+
         </nav>
+
       </div>
 
+      <!--  LOGOUT -->
       <div class="logout-wrap">
-        <button class="logout-btn" onclick="window.location.href='../login.html'">Logout</button>
+        <button class="logout-btn" onclick="window.location.href='../login.html'">
+          Logout
+        </button>
       </div>
     </aside>
 
@@ -52,7 +63,7 @@
     <main class="main-area">
       <div class="content-wrap">
 
-        <!-- Page Top -->
+        <!-- Top -->
         <div class="search-top-bar">
           <h1>Search Books</h1>
 
@@ -64,6 +75,7 @@
 
         <!-- Search Box -->
         <div class="search-filter-box">
+
           <div class="search-input-wrap">
             <input
               type="text"
@@ -88,34 +100,35 @@
               <div onclick="selectCategory('Children')">Children</div>
             </div>
           </div>
+
         </div>
 
-        <!-- Books Grid -->
+        <!-- Books -->
         <div class="books-grid" id="booksGrid">
 
           <div class="book-card" data-title="To Kill a Mockingbird" data-author="Harper Lee" data-category="Novel">
-            <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=300" alt="To Kill a Mockingbird">
+            <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=300">
             <h3>To Kill a Mockingbird</h3>
             <p>Harper Lee</p>
             <button onclick="borrowBook('To Kill a Mockingbird')">Borrow</button>
           </div>
 
           <div class="book-card" data-title="Clean Code" data-author="Robert C. Martin" data-category="Programming">
-            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300" alt="Clean Code">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300">
             <h3>Clean Code</h3>
             <p>Robert C. Martin</p>
             <button onclick="borrowBook('Clean Code')">Borrow</button>
           </div>
 
           <div class="book-card" data-title="Java Programming" data-author="Herbert Schildt" data-category="Programming">
-            <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=300" alt="Java Programming">
+            <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=300">
             <h3>Java Programming</h3>
             <p>Herbert Schildt</p>
             <button onclick="borrowBook('Java Programming')">Borrow</button>
           </div>
 
           <div class="book-card" data-title="Matilda" data-author="Roald Dahl" data-category="Children">
-            <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=300" alt="Matilda">
+            <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=300">
             <h3>Matilda</h3>
             <p>Roald Dahl</p>
             <button onclick="borrowBook('Matilda')">Borrow</button>
@@ -125,6 +138,7 @@
 
       </div>
     </main>
+
   </div>
 
   <script src="../js/script.js"></script>
