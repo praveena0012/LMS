@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>User Dashboard</title>
- 
+
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,18 +26,20 @@
           <p>john@example.com</p>
         </div>
 
+        <!--  FIXED NAVIGATION -->
         <nav class="menu">
-          <a href="user-dashboard.html" class="menu-item active">
+
+          <a href="userdashboard.html" class="menu-item active">
             <span class="menu-icon">▣</span>
             <span>Dashboard</span>
           </a>
 
-          <a href="search-books.html" class="menu-item">
+          <a href="searchbooks.html" class="menu-item">
             <span class="menu-icon">⌕</span>
             <span>Search Books</span>
           </a>
 
-          <a href="my-books.html" class="menu-item">
+          <a href="mybooks.html" class="menu-item">
             <span class="menu-icon">▥</span>
             <span>My Books</span>
           </a>
@@ -46,7 +48,15 @@
             <span class="menu-icon">🗓</span>
             <span>Availability</span>
           </a>
+
         </nav>
+      </div>
+
+      <!-- OPTIONAL LOGOUT -->
+      <div class="logout-wrap">
+        <button class="logout-btn" onclick="window.location.href='../login.html'">
+          Logout
+        </button>
       </div>
     </aside>
 
@@ -93,7 +103,7 @@
           <div class="empty-state">
             <div class="empty-icon">📖</div>
             <p>No borrowed books yet</p>
-            <a href="search-books.html" class="browse-btn">Browse Books</a>
+            <a href="searchbooks.html" class="browse-btn">Browse Books</a>
           </div>
         </section>
 
