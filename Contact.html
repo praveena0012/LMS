@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Library Management System</title>
+
+  <link rel="stylesheet" href="css/contact.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-box">
+        <div class="logo-icon-text">📖</div>
+        <span class="logo-text">Library Management System</span>
+      </a>
+
+      <div class="nav-buttons">
+        <a href="index.html">Home</a>
+<a href="aboutus.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="login.html">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="contact-hero">
+    <div class="container hero-content">
+      <h1>Get In Touch</h1>
+      <p>Have questions? We're here to help and would love to hear from you</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container contact-grid">
+
+      <!-- Left side -->
+      <div class="contact-form-box">
+        <div class="form-header">
+          <h2>Send Us a Message</h2>
+          <p>Fill out the form and we'll get back to you within 24 hours</p>
+        </div>
+
+        <div id="successMessage" class="success-message hidden">
+          <div class="success-icon">📨</div>
+          <h3>Message Sent!</h3>
+          <p>We'll get back to you soon.</p>
+        </div>
+
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Doe" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="john@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="How can we help?" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="6" placeholder="Tell us more about your inquiry..." required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">📤 Send Message</button>
+        </form>
+      </div>
+
+      <!-- Right side -->
+      <div class="contact-info-side">
+        <div class="contact-info-box">
+          <h2>Contact Information</h2>
+
+          <div class="info-list">
+            <div class="info-item">
+              <div class="info-icon blue">📍</div>
+              <div>
+                <h3>Address</h3>
+                <p>123 Library Street<br>Rathmalana, Sri Lanka</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon green">📞</div>
+              <div>
+                <h3>Phone</h3>
+                <p>+94 11 234 5678<br>+94 11 876 5432</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon yellow">✉️</div>
+              <div>
+                <h3>Email</h3>
+                <p>contact@library.com<br>support@library.com</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon red">⏰</div>
+              <div>
+                <h3>Hours</h3>
+                <p>Mon - Fri: 9:00 AM - 8:00 PM<br>Sat - Sun: 10:00 AM - 6:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-box">
+          <div class="map-placeholder">
+            <div class="map-content">
+              <div class="map-icon">📍</div>
+              <p class="map-title">Map Location</p>
+              <p class="map-subtitle">123 Library Street, Rathmalana</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container small-container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to common questions about our library</p>
+      </div>
+
+      <div class="faq-list" id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Library Management System. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>

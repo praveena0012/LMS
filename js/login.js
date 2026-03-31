@@ -1,3 +1,4 @@
+
 const loginForm = document.getElementById("loginForm");
 
 if (loginForm) {
@@ -12,6 +13,21 @@ if (loginForm) {
       return;
     }
 
-    alert("Login successful!");
+    // Admin login
+    if (username === "admin" && password === "123") {
+      alert("Admin login successful!");
+      window.location.href = "Admin/dashboard.html";
+    }
+
+    // User login
+    else if (username === "user" && password === "123") {
+      alert("User login successful!");
+      window.location.href = "user/userdashboard.html";
+    }
+
+    // Invalid
+    else {
+      alert("Invalid username or password.");
+    }
   });
 }

@@ -18,26 +18,28 @@
           <div class="admin-logo-icon">📘</div>
           <div class="admin-logo-text">LMS</div>
         </div>
+              <a href="dashboard.html" class="menu-item">
+  ⬜ Dashboard
+</a>
 
-        <nav class="admin-menu">
-          <a href="dashboard.html" class="admin-menu-item">
-            <span class="admin-menu-icon">▣</span>
-            <span>Dashboard</span>
-          </a>
+<a href="managebooks.html" class="menu-item">
+  📚 Manage Books
+</a>
 
-          <a href="manage-books.html" class="admin-menu-item">
-            <span class="admin-menu-icon">▥</span>
-            <span>Manage Books</span>
-          </a>
+<a href="addbooks.html" class="menu-item active">
+  ➕ Add Book
+</a>
 
-          <a href="add-book.html" class="admin-menu-item active">
-            <span class="admin-menu-icon">＋</span>
-            <span>Add Book</span>
-          </a>
-        </nav>
+      
       </div>
+<button type="button" class="admin-logout-btn" onclick="logoutAdmin()">Logout</button>
 
-      <button class="admin-logout-btn">Logout</button>
+<script>
+  function logoutAdmin() {
+    localStorage.removeItem("role");
+    window.location.href = "../login.html";
+  }
+</script>
     </aside>
 
     <!-- Main -->
@@ -51,7 +53,7 @@
           <div class="admin-profile-box">
             <div class="admin-profile-icon">👤</div>
             <div class="admin-profile-text">
-              <h3>John Doe</h3>
+              <h3>Amy Anderson</h3>
               <p>Administrator</p>
             </div>
           </div>
@@ -98,6 +100,7 @@
     </main>
 
   </div>
+  
 
   <script src="../js/script.js"></script>
 </body>

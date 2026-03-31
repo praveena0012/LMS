@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8faff;
+  color: #0f172a;
+}
+
+h1, h2, h3, .logo-text {
+  font-family: "Sora", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.small-container {
+  max-width: 900px;
+}
+
+/* Navbar */
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon-text {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, #1a56db, #60a5fa);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-home {
+  color: #64748b;
+  background: transparent;
+}
+
+.btn-home:hover {
+  color: #1a56db;
+}
+
+.btn-login {
+  background: #1a56db;
+  color: white;
+}
+
+.btn-login:hover {
+  background: #1544b8;
+}
+
+/* Hero */
+.contact-hero {
+  background: linear-gradient(135deg, #1a56db, #60a5fa);
+  padding: 90px 0;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  color: #dbeafe;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 90px 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-form-box,
+.contact-info-box,
+.map-box {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+.contact-form-box,
+.contact-info-box {
+  padding: 32px;
+}
+
+.form-header {
+  margin-bottom: 24px;
+}
+
+.form-header h2,
+.contact-info-box h2 {
+  font-size: 28px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.form-header p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+  font-family: Arial, sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #1a56db;
+  box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.12);
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.submit-btn {
+  width: 100%;
+  border: none;
+  background: #1a56db;
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #1544b8;
+}
+
+/* Success message */
+.success-message {
+  text-align: center;
+  padding: 28px;
+  border-radius: 14px;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid #10b981;
+}
+
+.success-message h3 {
+  color: #10b981;
+  margin-bottom: 8px;
+  font-size: 22px;
+}
+
+.success-message p {
+  color: #64748b;
+}
+
+.success-icon {
+  width: 64px;
+  height: 64px;
+  background: #10b981;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 28px;
+  margin: 0 auto 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Info */
+.contact-info-side {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.info-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.info-icon.blue {
+  background: rgba(26, 86, 219, 0.1);
+}
+
+.info-icon.green {
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.info-icon.yellow {
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.info-icon.red {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.info-item h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.info-item p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* Map */
+.map-box {
+  overflow: hidden;
+}
+
+.map-placeholder {
+  height: 260px;
+  background: linear-gradient(135deg, #1a56db, #60a5fa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-content {
+  text-align: center;
+  color: white;
+}
+
+.map-icon {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.map-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.map-subtitle {
+  color: #dbeafe;
+  font-size: 14px;
+}
+
+/* FAQ */
+.faq-section {
+  background: white;
+  padding: 90px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.section-header p {
+  color: #64748b;
+  font-size: 18px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  background: #f8faff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 22px;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: #0f172a;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-icon {
+  color: #1a56db;
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.faq-answer {
+  margin-top: 14px;
+  margin-left: 30px;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* Footer */
+.footer {
+  background: #0f172a;
+  color: white;
+  padding: 30px 0;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content p {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .section-header h2 {
+    font-size: 32px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
+}

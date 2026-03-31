@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
+ 
   <link rel="stylesheet" href="../css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -12,33 +13,28 @@
 <div class="admin-layout">
 
   <!-- Sidebar -->
-  <aside class="admin-sidebar">
-    <div>
-      <div class="admin-logo-box">
-        <div class="admin-logo-icon">📘</div>
-        <div class="admin-logo-text">LMS</div>
-      </div>
+<aside class="admin-sidebar">
 
-      <nav class="admin-menu">
-        <a href="dashboard.html" class="admin-menu-item active">
-          <span class="admin-menu-icon">▣</span>
-          <span>Dashboard</span>
-        </a>
-
-        <a href="manage-books.html" class="admin-menu-item">
-          <span class="admin-menu-icon">▥</span>
-          <span>Manage Books</span>
-        </a>
-
-        <a href="add-book.html" class="admin-menu-item">
-          <span class="admin-menu-icon">＋</span>
-          <span>Add Book</span>
-        </a>
-      </nav>
+  <div class="sidebar-top">
+    
+    <div class="admin-logo-box">
+      <div class="admin-logo-icon">📘</div>
+      <div class="admin-logo-text">LMS</div>
     </div>
 
-    <button class="admin-logout-btn">Logout</button>
-  </aside>
+    <!-- Menu -->
+    <nav class="admin-menu">
+      <a href="dashboard.html" class="menu-item active">⬜ Dashboard</a>
+      <a href="managebooks.html" class="menu-item">📚 Manage Books</a>
+      <a href="addbooks.html" class="menu-item">➕ Add Book</a>
+    </nav>
+
+  </div>
+
+  <!-- Logout -->
+  <a href="../login.html" class="admin-logout-btn">Logout</a>
+
+</aside>
 
   <!-- Main -->
   <main class="admin-main">
@@ -204,6 +200,15 @@
   </main>
 
 </div>
+<script>
+  const logoutBtn = document.querySelector(".admin-logout-btn");
+
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", function () {
+      window.location.href = "../login.html";
+    });
+  }
+</script>
 
 </body>
 </html>

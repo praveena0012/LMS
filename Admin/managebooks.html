@@ -20,50 +20,32 @@
   <div class="admin-layout">
 
     <!-- Sidebar -->
-    <aside class="sidebar">
-      <div>
-        <div class="logo-box">
-          <div class="logo-icon">
-            <i class="fa-solid fa-book-open-reader"></i>
-          </div>
-          <div class="logo-text">LMS</div>
-        </div>
+    <aside class="admin-sidebar">
+  <div>
+    <div class="admin-logo-box">
+      <div class="admin-logo-icon">📘</div>
+      <div class="admin-logo-text">LMS</div>
+    </div>
 
-        <div class="sidebar-line"></div>
+    <a href="dashboard.html" class="menu-item">⬜ Dashboard</a>
+    <a href="managebooks.html" class="menu-item active">📚 Manage Books</a>
+    <a href="addbooks.html" class="menu-item ">➕ Add Book</a>
+  </div>
 
-        <nav class="menu">
-          <a href="#" class="menu-item">
-            <i class="fa-solid fa-table-cells-large"></i>
-            <span>Dashboard</span>
-          </a>
-
-          <a href="#" class="menu-item active">
-            <i class="fa-solid fa-book"></i>
-            <span>Manage Books</span>
-          </a>
-
-          <a href="#" class="menu-item">
-            <i class="fa-solid fa-plus"></i>
-            <span>Add Book</span>
-          </a>
-        </nav>
-      </div>
-
-      <button class="logout-btn">Logout</button>
-    </aside>
-
+  <a href="../login.html" class="admin-logout-btn">Logout</a>
+</aside>
     <!-- Main Content -->
     <main class="main-content">
       <header class="topbar">
         <h1>Manage Books</h1>
 
-        <div class="admin-profile">
-          <div class="profile-icon">
-            <i class="fa-regular fa-circle-user"></i>
-          </div>
-          <div class="profile-text">
-            <h3>John Doe</h3>
-            <p>Administrator</p>
+        
+          <div class="admin-profile-box">
+            <div class="admin-profile-icon">👤</div>
+            <div class="admin-profile-text">
+              <h3>Amy Anderson</h3>
+              <p>Administrator</p>
+            
           </div>
         </div>
       </header>
@@ -93,5 +75,6 @@
 
  
   <script src="../js/data.js"></script>
+  
 </body>
 </html>

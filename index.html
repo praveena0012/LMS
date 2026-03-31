@@ -1,16 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LMS</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Library Management System</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <h1>Library Management System</h1>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo-box">
+        <div class="logo-icon-text">📖</div>
+        <span class="logo-text">Library Management System</span>
+      </div>
 
-  <script src="js/script.js"></script>
+      <a href="index.html">Home</a>
+        <a href="aboutus.html">About us</a>
+        <a href="contact.html">Contact</a>
+       
+      <div class="nav-buttons">
+        <a href="login.html" class="btn btn-login">Login</a>
+        <a href="signup.html" class="btn btn-signup">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Discover.<br>Borrow.<br>Return.</h1>
+        <p>
+          Your gateway to endless knowledge. Explore thousands of books
+          and manage your reading journey with ease.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#books" class="btn hero-btn-white">Browse Books</a>
+          <a href="#features" class="btn hero-btn-outline">Learn More</a>
+        </div>
+      </div>
+
+      <div class="hero-image-box">
+        <img
+          src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=600&h=600&fit=crop"
+          alt="Books"
+          class="hero-image"
+        />
+        <div class="hero-image-bg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Choose Us</h2>
+        <p>Experience seamless library management with our modern platform</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon blue">🔍</div>
+          <h3>Search Books</h3>
+          <p>
+            Find any book instantly with our powerful search and filter system.
+            Browse by genre, author, or title.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon green">✅</div>
+          <h3>Easy Borrowing</h3>
+          <p>
+            Borrow books with just a click. Simple, fast, and hassle-free
+            borrowing process with automatic tracking.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon yellow">⏰</div>
+          <h3>Track Returns</h3>
+          <p>
+            Never miss a due date with automatic reminders and easy return
+            management from your dashboard.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Books -->
+  <section class="popular-books" id="books">
+    <div class="container">
+      <div class="books-header">
+        <div>
+          <h2>Popular Books</h2>
+          <p>Trending reads in our library</p>
+        </div>
+
+        <a href="login.html" class="btn view-all-btn">View All Books</a>
+      </div>
+
+      <div class="book-grid" id="bookGrid"></div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat-box">
+        <div class="stat-icon">🏛️</div>
+        <h3>5,000+</h3>
+        <p>Total Books</p>
+      </div>
+
+      <div class="stat-box">
+        <div class="stat-icon">👥</div>
+        <h3>2,500+</h3>
+        <p>Active Members</p>
+      </div>
+
+      <div class="stat-box">
+        <div class="stat-icon">📚</div>
+        <h3>350+</h3>
+        <p>Books Borrowed Today</p>
+      </div>
+
+      <div class="stat-box">
+        <div class="stat-icon">📈</div>
+        <h3>45+</h3>
+        <p>Categories</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-logo">
+          <div class="logo-icon-text">📖</div>
+          <span>LMS</span>
+        </div>
+        <p class="footer-text">
+          Your trusted partner in knowledge management and learning.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#books">Browse Books</a></li>
+          <li><a href="#features">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Resources</h4>
+        <ul class="footer-links">
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact Info</h4>
+        <ul class="footer-links">
+          <li>123 Library Street</li>
+          <li>New York, NY 10001</li>
+          <li>contact@library.com</li>
+          <li>+1 (555) 123-4567</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Library Management System. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
