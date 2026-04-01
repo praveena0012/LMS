@@ -922,7 +922,7 @@ body {
   padding: 5px;
 }
 
-/* Empty card */
+
 .empty-card {
   background: white;
   border-radius: 12px;
@@ -1089,7 +1089,7 @@ body {
   min-height: 100vh;
 }
 
-..admin-sidebar {
+.admin-sidebar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1322,10 +1322,6 @@ body {
     gap: 24px;
   }
 }
-
-/* =========================
-   ADMIN DASHBOARD
-========================= */
 
 .admin-layout {
   display: flex;
@@ -2544,3 +2540,5 @@ ul {
 .availability-table td {
   vertical-align: middle;
 }
+
+
