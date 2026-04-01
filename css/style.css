@@ -2514,3 +2514,33 @@ ul {
 .admin-logout-btn:hover {
   background: #dc2626;
 }
+
+.availability-table td:first-child {
+  width: 320px;
+}
+
+.book-cell {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.book-cell img {
+  width: 70px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.book-cell span {
+  margin: 0;
+  text-align: left;
+}
+
+.availability-table td {
+  vertical-align: middle;
+}
